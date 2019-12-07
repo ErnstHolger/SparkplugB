@@ -31,8 +31,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="protobuf-net, Version=2.4.0.0, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
+      <HintPath>packages\protobuf-net.2.4.4\lib\net40\protobuf-net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,7 +48,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core.cs" />
+    <Compile Include="DataSet.cs" />
+    <Compile Include="DataSetValue.cs" />
+    <Compile Include="DataSetValueExtension.cs" />
+    <Compile Include="DataType.cs" />
+    <Compile Include="Extension.cs" />
+    <Compile Include="GetDeviceBirthPayload.cs" />
+    <Compile Include="ITimeStamp.cs" />
+    <Compile Include="MetaData.cs" />
+    <Compile Include="Metric.cs" />
+    <Compile Include="MetricValueExtension.cs" />
+    <Compile Include="NameSpaces.cs" />
+    <Compile Include="Parameter.cs" />
+    <Compile Include="Payload.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertySet.cs" />
+    <Compile Include="PropertySetList.cs" />
+    <Compile Include="PropertyValue.cs" />
+    <Compile Include="PropertyValueExtension.cs" />
+    <Compile Include="Row.cs" />
+    <Compile Include="Template.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
